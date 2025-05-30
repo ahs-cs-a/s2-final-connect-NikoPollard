@@ -93,6 +93,7 @@ public class Connect4 extends JPanel implements MouseListener{
             message = getCurrentPlayer().getName() + " goes in column " + move.getColumn() + ".  ";
             if ( myBoard.winner(move) != null ) {
                 message += getCurrentPlayer().getName() + " wins!  " + getCurrentPlayer().getName() + " wins!  ";
+                System.out.println(message);
                 repaint();
             }else {
                 advanceToNextPlayer();
